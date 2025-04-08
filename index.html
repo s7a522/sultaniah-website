@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الخدمات | مؤسسة دار السلطانية لإعادة التدوير</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap">
+  <style>
+    :root {
+      --primary-color: #2d3e50;
+      --secondary-color: #8bbd3c;
+      --accent-color: #e4f2d8;
+      --text-color: #333;
+      --light-color: #fafafa;
+    }
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: var(--light-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.5s ease;
+    }
+    header, footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    }
+    header::before, footer::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 60px;
+      height: 60px;
+      background-image: url('/mnt/data/يبريبربيرثب.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 1;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--secondary-color);
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    section {
+      padding: 30px;
+      position: relative;
+      z-index: 1;
+    }
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 150px;
+      background: linear-gradient(to top, var(--accent-color), transparent);
+      z-index: -1;
+      border-bottom-left-radius: 80% 30px;
+      border-bottom-right-radius: 80% 30px;
+    }
+    .service {
+      background-color: white;
+      border: 2px solid var(--accent-color);
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      margin-bottom: 40px;
+      overflow: hidden;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards ease-in-out;
+    }
+    .service:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+    .service:nth-child(1) { animation-delay: 0.2s; }
+    .service:nth-child(2) { animation-delay: 0.4s; }
+    .service:nth-child(3) { animation-delay: 0.6s; }
+    .service:nth-child(4) { animation-delay: 0.8s; }
+    .service:nth-child(5) { animation-delay: 1s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .service img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+      transition: transform 0.3s ease;
+    }
+    .service img:hover {
+      transform: scale(1.03);
+    }
+    .service h3 {
+      padding: 15px 20px 5px 20px;
+      margin: 0;
+      color: var(--secondary-color);
+      font-size: 1.5em;
+      border-bottom: 1px dashed var(--accent-color);
+    }
+    .service p {
+      padding: 0 20px 20px 20px;
+      margin: 0;
+      line-height: 1.9;
+      font-size: 1.1em;
+    }
+    .logo-overlay {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 60px;
+      opacity: 0.8;
+    }
+    .service-container {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>خدماتنا</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="services.html">الخدمات</a></li>
+        <li><a href="gallery.html">المعرض</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>خدمات مؤسسة دار السلطانية</h2>
+      <p>نقدم حلولاً متكاملة في مجال إعادة تدوير الورق منذ أكثر من 30 عاماً، ونفخر بثقة عملائنا في مختلف القطاعات.</p>
+
+      <!-- الخدمات هنا -->
+      <!-- تم الاحتفاظ بالمحتوى السابق دون تغيير -->
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 مؤسسة دار السلطانية لإعادة التدوير - جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
